@@ -1,51 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    <!-- <input type="tel" placeholder="Pirmas skaicius" id="x">
-    <input type="tel" placeholder="Antras skaicius" id="y">
-    <button id="sum">SUM</button>
-    <button id="sub">SUB</button>
-    <button id="div">DIV</button>
-    <button id="mul">MUL</button>
-    <button id="mod">MOD</button>
-    <button id="clear">clear</button>
-        <p>Result:</p>
-        <p id="result"></p> -->
+  </head>
+  <body>
     <div>
-        <div id="screen" class="d-flex align-center justify-center flex-column font-family">
-            <p id = "user-inputs" class="d-flex align-center"></p>
-            <p id = "output" class="d-flex align-center flex-end"></p>
+      <div
+        id="screen"
+        class="d-flex align-center justify-center flex-column font-family"
+      >
+        <p id="user-inputs" class="d-flex align-center"></p>
+        <p id="output" class="d-flex align-center flex-end"></p>
+      </div>
+      <div class="calc font-family">
+        <div
+          class="num1 d-flex align-center justify-center font-32 pointer"
+          id="num1"
+        >
+          1
         </div>
-    <div class="calc font-family">
-        <div class="num1 d-flex align-center justify-center font-32 pointer" id="num1">1</div>
-        <div class="num2 d-flex align-center justify-center font-32 pointer" id="num2">2</div>
-        <div class="num3 d-flex align-center justify-center font-32 pointer" id="num3">3</div>
-        <div class="num4 d-flex align-center justify-center font-32 pointer" id="num4">4</div>
-        <div class="num5 d-flex align-center justify-center font-32 pointer" id="num5">5</div>
-        <div class="num6 d-flex align-center justify-center font-32 pointer" id="num6">6</div>
-        <div class="num7 d-flex align-center justify-center font-32 pointer" id="num7">7</div>
-        <div class="num8 d-flex align-center justify-center font-32 pointer" id="num8">8</div>
-        <div class="num9 d-flex align-center justify-center font-32 pointer" id="num9">9</div>
-        <div class="num0 d-flex align-center justify-center font-32 pointer" id="num0">0</div>
-        <div id="sum" class="math d-flex align-center justify-center font-32 pointer">+</div>
-        <div id="sub" class="math d-flex align-center justify-center font-32 pointer">-</div>
-        <div id="div" class="math d-flex align-center justify-center font-32 pointer">/</div>
-        <div id="mul" class="math d-flex align-center justify-center font-32 pointer">*</div>
-        <div id="mod" class="math d-flex align-center justify-center font-32 pointer">%</div>
-        <div id="result" class="math d-flex align-center justify-center font-32 pointer">=</div>
+        <div
+          class="num2 d-flex align-center justify-center font-32 pointer"
+          id="num2"
+        >
+          2
+        </div>
+        <div
+          class="num3 d-flex align-center justify-center font-32 pointer"
+          id="num3"
+        >
+          3
+        </div>
+        <div
+          class="num4 d-flex align-center justify-center font-32 pointer"
+          id="num4"
+        >
+          4
+        </div>
+        <div
+          class="num5 d-flex align-center justify-center font-32 pointer"
+          id="num5"
+        >
+          5
+        </div>
+        <div
+          class="num6 d-flex align-center justify-center font-32 pointer"
+          id="num6"
+        >
+          6
+        </div>
+        <div
+          class="num7 d-flex align-center justify-center font-32 pointer"
+          id="num7"
+        >
+          7
+        </div>
+        <div
+          class="num8 d-flex align-center justify-center font-32 pointer"
+          id="num8"
+        >
+          8
+        </div>
+        <div
+          class="num9 d-flex align-center justify-center font-32 pointer"
+          id="num9"
+        >
+          9
+        </div>
+        <div
+          class="num0 d-flex align-center justify-center font-32 pointer"
+          id="num0"
+        >
+          0
+        </div>
+        <div
+          id="sum"
+          class="math d-flex align-center justify-center font-32 pointer"
+        >
+          +
+        </div>
+        <div
+          id="sub"
+          class="math d-flex align-center justify-center font-32 pointer"
+        >
+          -
+        </div>
+        <div
+          id="div"
+          class="math d-flex align-center justify-center font-32 pointer"
+        >
+          /
+        </div>
+        <div
+          id="mul"
+          class="math d-flex align-center justify-center font-32 pointer"
+        >
+          *
+        </div>
+        <div
+          id="mod"
+          class="math d-flex align-center justify-center font-32 pointer"
+        >
+          %
+        </div>
+        <div
+          id="result"
+          class="math d-flex align-center justify-center font-32 pointer"
+        >
+          =
+        </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
